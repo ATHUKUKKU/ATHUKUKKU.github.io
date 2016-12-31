@@ -1,0 +1,102 @@
+body {
+	height: 100%;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+}
+.col-sm-4{
+font-size:20px;
+font-family:"Trebuchet MS", Helvetica, sans-serif;
+  color: 7F043A;
+}
+
+.col-sm-1{
+margin-top: 20px;	
+font-size: 42px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  color: #150966;
+}
+h2{
+font-size:25px;
+font-family:"Comic Sans MS", cursive, sans-serif;
+  color: #630170;
+
+}
+.col-sm-4{
+color:#630170 ;  
+}
+.jumbotron h2 {
+color:;
+}
+.container h3{
+color:#7F043A ;
+}
+
+h3{
+font-size:20px;
+font-family:"Trebuchet MS", Helvetica, sans-serif;
+  color: 7F043A;
+}
+.gallery {
+margin-top: 20px;
+ }
+
+.gallery-item {
+  margin: 20px;
+  border: 2px ;
+}
+li{
+display: inline;
+  padding: 18px 28px;
+font-size:20px;
+
+}
+.parent {
+display : inline;
+padding: 18px 28px;
+font-size:20px;
+}
+
+nav {
+  background-color: #FFF;
+}
+
+nav li {
+  margin: 0;
+  padding: 0 10px;
+  display: inline;
+}
+
+nav ul {
+  display: inline;
+}
+
+.contact-btn {
+float: right;
+}
+
+.contact-btn a {
+  margin-right: 30px;
+  padding: 8px 18px;
+  border: 1px solid #204156;
+
+}
+
+.contact-btn a:active {
+  position: relative;
+  bottom: 2px;
+}
+nav a {
+  height: 60px;
+  line-height: 60px;
+  color: #204156;
+  text-decoration: none;
+}
+.qua{
+display: inline;
+}
+tr{
+font-size:20px;
+font-family:"Trebuchet MS", Helvetica, sans-serif;
+  color:#7F043A;
+}
