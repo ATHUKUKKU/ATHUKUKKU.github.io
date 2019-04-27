@@ -39,7 +39,12 @@ kpp="1,5,3,9"
   $('#display').html("ID of selected images :"+image_selected);
     })
   $("button").click(function(){
+    function empty() {
+    //empty your array
+    aee.length = 0;
+}
     $.each( image_selected, function(i,l){
+      empty();
       aee.push(image_selected);
       return false;
       
