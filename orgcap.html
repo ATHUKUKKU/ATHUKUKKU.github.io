@@ -1,6 +1,6 @@
 <html>
 <head>
-	 <script src="jquery.min.js"></script>
+	 <script src="https://athulyashyju.github.io/jquery.min.js"></script>
 <meta charset=utf-8 />
 	<style>
 .checked {border:solid 3px blue;background:blue;}
@@ -15,6 +15,9 @@ var image_selected = new Array();
 var $elements = [];
 
 var aee = new Array();
+
+
+kpp="1,2,4,5,6"
  $('#d2').on('click', ".select_img", function () {
 	 
         var aa = $(this)
@@ -22,7 +25,7 @@ var aee = new Array();
             aa.addClass('checked');
 		        
 			var my_id=this.id;
-			image_selected.push(my_id);			
+			image_selected.push(my_id);
         } else {
             aa.removeClass('checked');
             var my_id=this.id;
@@ -31,16 +34,24 @@ var aee = new Array();
 			image_selected.splice(index, 1);
 			}
         }
-       
+
+
 	$('#display').html("ID of selected images :"+image_selected);
     })
   $("button").click(function(){
- if (image_selected==aee) {
+  	$.each( image_selected, function(i,l){
+      aee.push(image_selected);
+      return false;
+      
+  })
+  		// $('#display').html("ID of selected images :"+im);
+ if (kpp==aee) {
+
  	$('#display').html("success");
  }
  else
  {
- 	 	$('#display').html("dfdf");
+ 	 	$('#display').html("failed");
 
  }
 })
@@ -196,7 +207,9 @@ Click verify once there are none left.
 </div>
 <br><br>
 <br>
-<div id=display></div>
+<div id="display"></div>
+<div id="kk"></div>
+
 
 <div class="rc-imageselect-incorrect-response" style="display:none">Please try again.
 </div>
