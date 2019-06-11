@@ -17,53 +17,52 @@ var $elements = [];
 var aee = new Array();
 
 
-kpp="1,5,2,4,6"
+kpp="1,8,5,3,7,9"
  $('#d2').on('click', ".select_img", function () {
-	 
+     
         var aa = $(this)
         if( !aa.is('.checked')){
             aa.addClass('checked');
-		        
-			var my_id=this.id;
-			image_selected.push(my_id);
+                
+            var my_id=this.id;
+            image_selected.push(my_id);
         } else {
             aa.removeClass('checked');
             var my_id=this.id;
-			var index = image_selected.indexOf(my_id);
-			if (index > -1) {
-			image_selected.splice(index, 1);
-			}
+            var index = image_selected.indexOf(my_id);
+            if (index > -1) {
+            image_selected.splice(index, 1);
+            }
         }
 
 
-	$('#display').html("ID of selected images :"+image_selected);
+    $('#display').html("ID of selected images :"+image_selected);
     })
   $("button").click(function(){
-  	function empty() {
+    function empty() {
     //empty your array
     aee.length = 0;
 }
-  	$.each( image_selected, function(i,l){
-  		      empty();
+    $.each( image_selected, function(i,l){
+              empty();
       aee.push(image_selected);
       return false;
       
   })
-  		// $('#display').html("ID of selected images :"+im);
+        // $('#display').html("ID of selected images :"+im);
  if (kpp==aee) {
 
- 	$('#display').html("success");
+    $('#display').html("SUCCESS");
  }
  else
  {
- 	 	$('#display').html(aee);
+        $('#display').html("FAILED");
 
  }
 })
 ///////////////////
 
 })</script>
-
 </head>
 <body>
 <div style="margin-left: 400px">
